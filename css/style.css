@@ -1,0 +1,545 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  background-color: #3f0f0f;
+  position: fixed;
+  color: white;
+  padding: 3px;
+}
+
+.navbar .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 140px;
+}
+
+.navbar .nav .logo p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.navbar .nav .menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5em;
+}
+
+.navbar .nav .menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar .nav .menu li a:hover {
+  color: rgb(255, 123, 0);
+  border-bottom: 2px solid white;
+}
+
+/* end navbar */
+/* beranda */
+#beranda {
+  min-height: 100vh;
+  background: url("https://i.ibb.co.com/WPVs7yn/Red-and-Black-Modern-Special-Promo-Food-Menu-Instagram-Post-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#beranda .deskripsi {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 40px;
+}
+#beranda .deskripsi .des1 h1 {
+  font-size: 80px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.712);
+}
+#beranda .deskripsi .des1 p {
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 4%;
+}
+
+/* end beranda */
+#tentang {
+  min-height: 70vh;
+  background: url("https://i.ibb.co.com/LxYQbsw/bg-tentang.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-right: 40px;
+}
+#tentang .about {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+#tentang .about .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+#tentang .about .information {
+  margin-top: 12%;
+  text-align: left;
+}
+#tentang .about .information p:nth-child(1) {
+  margin-top: 50px;
+  font-size: 50px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.712);
+}
+#tentang .about .information p:nth-child(2) {
+  margin-top: 25px;
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+#menu {
+  min-height: 200vh;
+  background: url("https://i.ibb.co.com/Rc158Nq/bg-menu.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+#menu .judul {
+  text-align: center;
+  padding-top: 5%;
+  font-size: 40px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+#menu .ayam-bakar .lgo {
+  font-size: 32px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 25px 0px;
+}
+#menu .all-menu {
+  margin: 10px 40px;
+}
+#menu .all-menu .all-ayam-bakar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+#menu .all-menu .all-ayam-bakar .menu-ayam {
+  background-color: #800020;
+  box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.342);
+}
+#menu .all-menu .all-ayam-bakar .menu-ayam img {
+  width: 100%;
+  height: 200px;
+}
+#menu .all-menu .all-ayam-bakar .menu-ayam .deskripsi-menu {
+  margin: 5px;
+  padding: 5px;
+}
+#menu .all-menu .all-ayam-bakar .menu-ayam .deskripsi-menu .jdl {
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+#menu .all-menu .all-ayam-bakar .menu-ayam .deskripsi-menu p i {
+  font-size: 17px;
+  color: #ffd000;
+}
+#menu .all-menu .all-ayam-bakar .menu-ayam .deskripsi-menu .isi {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+#menu .all-menu .all-ayam-bakar .menu-ayam .deskripsi-menu .detail {
+  width: 30%;
+  height: 30px;
+  background-color: #ff6600;
+  color: #3b000f;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  cursor: pointer;
+}
+#menu .all-menu .all-ayam-bakar .menu-ayam .deskripsi-menu .beli {
+  width: 65%;
+  height: 30px;
+  background-color: #ffd000;
+  color: #3b000f;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  cursor: pointer;
+}
+#menu .all-menu .bebek-bakar .lgo {
+  font-size: 32px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 25px 0px;
+}
+#menu .all-menu .all-bebek-bakar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+#menu .all-menu .all-bebek-bakar .menu-bebek {
+  background-color: #4B1B1B;
+  box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.342);
+}
+#menu .all-menu .all-bebek-bakar .menu-bebek .jdl {
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#menu .all-menu .all-bebek-bakar .menu-bebek img {
+  width: 100%;
+  height: 200px;
+}
+#menu .all-menu .all-bebek-bakar .menu-bebek .deskripsi-menu {
+  margin: 5px;
+  padding: 5px;
+}
+#menu .all-menu .all-bebek-bakar .menu-bebek .deskripsi-menu .jdl {
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+#menu .all-menu .all-bebek-bakar .menu-bebek .deskripsi-menu p i {
+  font-size: 17px;
+  color: #ffd000;
+}
+#menu .all-menu .all-bebek-bakar .menu-bebek .deskripsi-menu .isi {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+#menu .all-menu .all-bebek-bakar .menu-bebek .deskripsi-menu .detail {
+  width: 30%;
+  height: 30px;
+  background-color: #ff6600;
+  color: #3b000f;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  cursor: pointer;
+}
+#menu .all-menu .all-bebek-bakar .menu-bebek .deskripsi-menu .beli {
+  width: 65%;
+  height: 30px;
+  background-color: #ffd000;
+  color: #3b000f;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  cursor: pointer;
+}
+#menu .all-menu .ikan-bakar .lgo {
+  font-size: 32px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 25px 0px;
+}
+#menu .all-menu .all-ikan-bakar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+#menu .all-menu .all-ikan-bakar .menu-ikan {
+  background-color: #5A1A1A;
+  box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.342);
+}
+#menu .all-menu .all-ikan-bakar .menu-ikan .jdl {
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#menu .all-menu .all-ikan-bakar .menu-ikan img {
+  width: 100%;
+  height: 200px;
+}
+#menu .all-menu .all-ikan-bakar .menu-ikan .deskripsi-menu {
+  margin: 5px;
+  padding: 5px;
+}
+#menu .all-menu .all-ikan-bakar .menu-ikan .deskripsi-menu .jdl {
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+#menu .all-menu .all-ikan-bakar .menu-ikan .deskripsi-menu p i {
+  font-size: 17px;
+  color: #ffd000;
+}
+#menu .all-menu .all-ikan-bakar .menu-ikan .deskripsi-menu .isi {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+#menu .all-menu .all-ikan-bakar .menu-ikan .deskripsi-menu .detail {
+  width: 30%;
+  height: 30px;
+  background-color: #ff6600;
+  color: #3b000f;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  cursor: pointer;
+}
+#menu .all-menu .all-ikan-bakar .menu-ikan .deskripsi-menu .beli {
+  width: 65%;
+  height: 30px;
+  background-color: #ffd000;
+  color: #3b000f;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  cursor: pointer;
+}
+
+#promo {
+  min-height: 80vh;
+  background: url("https://i.ibb.co.com/RD9xM99/bgpromo-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#promo .judul {
+  text-align: center;
+  padding-top: 2%;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  margin-bottom: 27px;
+}
+#promo .all-promo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0px 45px;
+}
+#promo .all-promo .menu-promo {
+  background-color: #630019;
+  color: white;
+  box-shadow: 1px 3px 2px rgba(255, 255, 255, 0.342);
+}
+#promo .all-promo .menu-promo img {
+  width: 100%;
+  height: 250px;
+}
+#promo .all-promo .menu-promo .des-promo {
+  margin: 5px;
+  padding: 5px;
+}
+#promo .all-promo .menu-promo .des-promo .jdl {
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+#promo .all-promo .menu-promo .des-promo p i {
+  font-size: 17px;
+  color: #ffd000;
+}
+#promo .all-promo .menu-promo .des-promo .isi {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+#promo .all-promo .menu-promo .des-promo .detail {
+  width: 30%;
+  height: 30px;
+  background-color: #ff6600;
+  color: #3b000f;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  cursor: pointer;
+}
+#promo .all-promo .menu-promo .des-promo .beli {
+  width: 65%;
+  height: 30px;
+  background-color: #ffd000;
+  color: #3b000f;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  cursor: pointer;
+}
+
+#hubungi {
+  min-height: 20vh;
+  background: linear-gradient(to bottom, #af2222, #6C0101 5%);
+  color: white;
+}
+#hubungi .all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom yang lebar sama */
+  gap: 20px;
+  padding: 20px 30px;
+}
+#hubungi .all .judul p:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-style: normal;
+}
+#hubungi .all .judul .menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+#hubungi .all .judul .menu li {
+  list-style: none;
+}
+#hubungi .all .judul .menu li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#hubungi .all .judul .menu li a:hover {
+  color: #ff6600;
+  border-bottom: 1px solid black;
+}
+#hubungi .all .judul .copy {
+  color: rgb(168, 168, 168);
+}
+#hubungi .all .judul .copy span {
+  color: #d1d1d1;
+}
+#hubungi .all .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hubungi .all .contact .location {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 5px;
+}
+#hubungi .all .contact .no_hp {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 5px;
+}
+#hubungi .all .contact .email {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+#hubungi .all .motivation .judul {
+  font-size: 16px;
+  font-family: "merriweather", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+#hubungi .all .motivation .isi {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+#hubungi .all .motivation ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+#hubungi .all .motivation ul li {
+  list-style: none;
+}
+#hubungi .all .motivation ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

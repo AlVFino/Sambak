@@ -1,0 +1,573 @@
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+body{
+   background-color: #FFFFFF; 
+}
+.container{
+    padding: 0;
+    margin: 0;
+}
+
+/* navbar */
+
+.navbar{
+    width: 100%;
+    background-color: #3f0f0f;
+    position: fixed;
+    color: white;
+    padding: 3px;
+}
+.navbar .nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 140px;
+}
+.navbar .nav .logo p{
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 6px;
+}
+
+.navbar .nav .menu{
+    display: flex;
+    list-style: none;
+    gap: 1.5em;
+}
+.navbar .nav .menu li a{
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 18px;
+   font-weight: 500;
+}
+.navbar .nav .menu li a:hover{
+    color: rgb(255, 123, 0);
+    border-bottom: 2px solid white;
+ }
+/* end navbar */
+
+/* beranda */
+#beranda {
+    min-height: 100vh;
+    background: url("https://i.ibb.co.com/WPVs7yn/Red-and-Black-Modern-Special-Promo-Food-Menu-Instagram-Post-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .deskripsi {
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px;
+        .des1 {
+            h1{
+                font-size: 80px;
+                font-family: "Roboto Slab", serif;
+                font-optical-sizing: auto;
+                font-weight: 900;
+                font-style: normal;
+                text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.712);
+            }
+            p{
+                font-size: 23px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                 font-style: normal;
+                 margin-top: 4%;
+            }
+        }
+    }
+}
+
+
+/* end beranda */
+// tentang
+
+#tentang{
+    min-height: 70vh;
+    background: url("https://i.ibb.co.com/LxYQbsw/bg-tentang.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-right: 40px;
+    .about{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+        }
+        .information{
+            margin-top: 12%;
+            text-align: left;
+            p:nth-child(1){
+                margin-top: 50px;
+                font-size: 50px;
+                font-family: "Roboto Slab", serif;
+                font-optical-sizing: auto;
+                font-weight: 900;
+                font-style: normal;
+                text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.712);
+            }
+            p:nth-child(2){
+                margin-top: 25px;
+                font-size: 23px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 200;
+                font-style: normal;
+               
+            }
+        }
+    }
+}
+// menu
+#menu{
+    min-height: 200vh;
+    background: url("https://i.ibb.co.com/Rc158Nq/bg-menu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    .judul{
+        text-align: center;
+        padding-top: 5%;
+        font-size: 40px;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+    }
+    .ayam-bakar{
+        .lgo{
+                font-size: 32px;
+                font-family: "Roboto Slab", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                margin: 25px 0px;
+            }
+    }
+    .all-menu{
+    margin: 10px 40px;
+    
+        .all-ayam-bakar{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            .menu-ayam{
+                background-color: #800020;
+                box-shadow: 1px 2px 1px  rgba(255, 255, 255, 0.342);           
+                img{
+                    width: 100%;
+                    height: 200px;
+                    
+                }
+                .deskripsi-menu{
+                    margin: 5px;
+                    padding: 5px;
+
+                    .jdl{
+                        font-size: 18px;
+                        font-family: "Merriweather", serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        margin-bottom: 5px;                  
+                    }
+                    p{
+                        i{
+                            font-size: 17px;
+                            color: #ffd000;
+                        }
+                    }
+                    .isi{
+                        font-size: 16px;
+                        font-family: "Merriweather", serif;
+                        font-weight: 100;
+                        font-style: normal;
+                        margin-bottom: 8px; 
+                    }
+                    
+                .detail{
+                        width: 30%;
+                        height: 30px;
+                        background-color: #ff6600;
+                        color: #3b000f;
+                        border: none;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-style: normal;
+                        cursor: pointer;
+                }
+                .beli{
+                    width: 65%;
+                    height: 30px;
+                    background-color: #ffd000;
+                    color: #3b000f;
+                    border: none;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-style: normal;
+                    cursor: pointer;
+                }
+            }
+            }
+        }
+        .bebek-bakar{
+            .lgo{
+                font-size: 32px;
+                font-family: "Roboto Slab", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                margin: 25px 0px;
+            }
+        }
+        .all-bebek-bakar{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            .menu-bebek{
+                background-color:#4B1B1B;
+                box-shadow: 1px 2px 1px  rgba(255, 255, 255, 0.342); 
+                .jdl{
+                    font-size: 18px;
+                    font-family: "Merriweather", serif;
+                    font-weight: 400;
+                    font-style: normal;                  
+                }
+                img{
+                    width: 100%;
+                    height: 200px;
+                }
+                .deskripsi-menu{
+                    margin: 5px;
+                    padding: 5px;
+                    .jdl{
+                        font-size: 18px;
+                        font-family: "Merriweather", serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        margin-bottom: 5px;                  
+                    }
+                    p{
+                        i{
+                            font-size: 17px;
+                            color: #ffd000;
+                        }
+                    }
+                    .isi{
+                        font-size: 16px;
+                        font-family: "Merriweather", serif;
+                        font-weight: 100;
+                        font-style: normal;
+                        margin-bottom: 8px; 
+                    }
+                    
+                .detail{
+                        width: 30%;
+                        height: 30px;
+                        background-color: #ff6600;
+                        color: #3b000f;
+                        border: none;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-style: normal;
+                        cursor: pointer;
+                }
+                .beli{
+                    width: 65%;
+                    height: 30px;
+                    background-color: #ffd000;
+                    color: #3b000f;
+                    border: none;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-style: normal;
+                    cursor: pointer;
+                }
+            }
+            }
+        }
+        .ikan-bakar{
+            .lgo{
+                font-size: 32px;
+                font-family: "Roboto Slab", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                margin: 25px 0px;
+            }
+        }
+        .all-ikan-bakar{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            
+            .menu-ikan{
+                background-color: #5A1A1A;
+                box-shadow: 1px 2px 1px  rgba(255, 255, 255, 0.342); 
+                .jdl{
+                    font-size: 18px;
+                    font-family: "Merriweather", serif;
+                    font-weight: 400;
+                    font-style: normal;                  
+                }
+                img{
+                    width: 100%;
+                    height: 200px;
+                }
+                 .deskripsi-menu{
+                    margin: 5px;
+                    padding: 5px;
+                    .jdl{
+                        font-size: 18px;
+                        font-family: "Merriweather", serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        margin-bottom: 5px;                  
+                    }
+                    p{
+                        i{
+                            font-size: 17px;
+                            color: #ffd000;
+                        }
+                    }
+                    .isi{
+                        font-size: 16px;
+                        font-family: "Merriweather", serif;
+                        font-weight: 100;
+                        font-style: normal;
+                        margin-bottom: 8px; 
+                    }
+                    
+                .detail{
+                        width: 30%;
+                        height: 30px;
+                        background-color: #ff6600;
+                        color: #3b000f;
+                        border: none;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-style: normal;
+                        cursor: pointer;
+                }
+                .beli{
+                    width: 65%;
+                    height: 30px;
+                    background-color: #ffd000;
+                    color: #3b000f;
+                    border: none;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-style: normal;
+                    cursor: pointer;
+                }
+            }
+            }
+        }
+    }
+}
+
+#promo{
+    min-height: 80vh;
+    background: url("https://i.ibb.co.com/RD9xM99/bgpromo-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .judul{
+        text-align: center;
+        padding-top: 2%;
+        color: #FFFFFF;
+        font-size: 40px;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        margin-bottom: 27px;
+    }
+    .all-promo{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 0px 45px;
+
+        .menu-promo{
+            background-color:#630019;
+            color: white;
+            box-shadow: 1px 3px 2px  rgba(255, 255, 255, 0.342);
+            img{
+                width: 100%;
+                height: 250px;
+            }
+            .des-promo{
+                margin: 5px;
+                padding: 5px;
+                .jdl{
+                    font-size: 18px;
+                    font-family: "Merriweather", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    margin-bottom: 5px;                  
+                }
+                p{
+                    i{
+                        font-size: 17px;
+                        color: #ffd000;
+                    }
+                }
+                .isi{
+                    font-size: 16px;
+                    font-family: "Merriweather", serif;
+                    font-weight: 100;
+                    font-style: normal;
+                    margin-bottom: 8px; 
+                }
+                
+            .detail{
+                    width: 30%;
+                    height: 30px;
+                    background-color: #ff6600;
+                    color: #3b000f;
+                    border: none;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-style: normal;
+                    cursor: pointer;
+            }
+            .beli{
+                width: 65%;
+                height: 30px;
+                background-color: #ffd000;
+                color: #3b000f;
+                border: none;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                font-style: normal;
+                cursor: pointer;
+            }
+        }
+        }
+    }
+}
+
+#hubungi {
+    min-height: 20vh;
+    background: linear-gradient(to bottom, #af2222,#6C0101 5%);
+    color: white;
+    .all{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom yang lebar sama */
+        gap: 20px;
+        padding: 20px 30px;
+        .judul{
+            p:nth-child(1){
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                font-family: "Roboto Slab", serif;
+                font-weight: 600;
+                letter-spacing: 0.1em;
+                font-style: normal;
+            }
+            .menu{
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: #FFFFFF;
+                    }
+                    a:hover{
+                        color: #ff6600;
+                        border-bottom: 1px solid black;
+                    }
+                }
+            }
+            .copy{
+                color: rgb(168, 168, 168);
+                span{
+                    color: #d1d1d1;
+                }
+            }
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .location{
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                margin-bottom: 5px;
+            }
+            .no_hp{
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                margin-bottom:5px ;
+            }
+            .email{
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+            }
+        }
+       .motivation{
+        .judul{
+            font-size: 16px;
+            font-family: "merriweather", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            margin-bottom: 5px;
+        }
+        .isi{
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            margin-bottom: 8px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            li{
+                list-style: none;
+                a{
+                  text-decoration: none; 
+                  font-size: 20px;
+                  color: white;
+                }
+            }
+        }
+       } 
+    }
+}
